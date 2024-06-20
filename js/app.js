@@ -15,7 +15,7 @@ function budcarClima(e){
 
     if (ciudad === '' || pais === '' ){
         //hubo un error
-        mostrarError('Ambos campos son obligatorios')
+        mostrarError('Both fields are required')
 
         return
     }
@@ -58,7 +58,7 @@ function consultarAPI(ciudad, pais){
             console.log(datos)
             limpiarHTML() 
             if(datos.cod === "404"){
-                mostrarError('Ciudad no encontrada')
+                mostrarError('City not found')
                 return
             }
 
